@@ -1,63 +1,51 @@
-function teste_x(toTest) {
-	
-	try {
-		if(eval(toTest)) {
-			
-			throw 'ok';
-			
-		} else {
-			
-			throw 'oh no';
-		}
-		
-	} catch(e) {
+//	Instructions for JSLint, see [jslint.com](http://www.jslint.com)
+/*jslint browser: true */
+/*global alert */
 
-		if(e != 'ok') {
+var x_ifc = x_ifc || {};
 
-			alert(e);
-			
-			return false;
-		}
-		
-		return true;
-	}
-}
+(function (x_ifc) {
 
-function toggleHeight() {
-	
-	var tocLinkEl = document.getElementById('TOClink'),
-		requestUrl = tocLinkEl.getAttribute('href') || '',
-		myEl = document.getElementById('nav');
+	"use strict";
 
-	if(requestUrl && myEl.getAttribute('class') !== 'loaded') {
-		
-		var e2 = teste_x('x_ifc');
-		
-		if(e2 && ! document.getElementById('TOCTable')) {
-			
-			x_ifc.getTOCMenu(requestUrl, 'nav_inner');
+	function toggleHeight() {
+
+		var tocLinkEl = document.getElementById('TOClink'),
+			requestUrl = tocLinkEl.getAttribute('href') || '',
+			myEl = document.getElementById('nav');
+
+		if (requestUrl && myEl.getAttribute('class') !== 'loaded') {
+
+			if (x_ifc.getTOCMenu !== undefined) {
+
+				if (!document.getElementById('TOCTable')) {
+
+					x_ifc.getTOCMenu(requestUrl, 'nav_inner');
+
+				} else {
+
+					myEl.setAttribute('class', 'loaded');
+				}
+			}
 
 		} else {
-		
-			myEl.setAttribute('class', 'loaded');
+
+			myEl.setAttribute('class', 'collapsed');
 		}
-
-	} else {
-	
-		myEl.setAttribute('class', 'collapsed');
 	}
-}
 
-function initTOCMenu() {
-	
-	console.log('hi', 'initTOCMenu');
+	function initTOCMenu() {
 
-	document.getElementById('navigation').removeAttribute('class');
-	
-	document.getElementById('nav2').addEventListener('click', toggleHeight, false);
-	
-	var mxEl = document.getElementById('TOClinkWrapper');
-	mxEl.style.display = 'none';
-	
-}
+		var mxEl = document.getElementById('TOClinkWrapper');
+
+		document.getElementById('navigation').removeAttribute('class');
+
+		document.getElementById('nav2').addEventListener('click', toggleHeight, false);
+
+		mxEl.style.display = 'none';
+	}
+
+	window.initTOCMenu = initTOCMenu;
+
+}(x_ifc));
 
