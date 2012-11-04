@@ -14,7 +14,7 @@ var x_ifc = x_ifc || {};
 			requestUrl = tocLinkEl.getAttribute('href') || '',
 			myEl = document.getElementById('nav');
 
-		if (requestUrl && myEl.getAttribute('class') !== 'loaded') {
+		if (myEl && requestUrl && myEl.getAttribute('class') !== 'loaded') {
 
 			if (x_ifc.getTOCMenu !== undefined) {
 
@@ -36,13 +36,18 @@ var x_ifc = x_ifc || {};
 
 	function initTOCMenu() {
 
-		var mxEl = document.getElementById('TOClinkWrapper');
+		var mxEl = document.getElementById('TOClinkWrapper'),
+			navEl = document.getElementById('navigation'),
+			nav2El = document.getElementById('nav2');
 
-		document.getElementById('navigation').removeAttribute('class');
+		if (mxEl && navEl && nav2El) {
 
-		document.getElementById('nav2').addEventListener('click', toggleHeight, false);
+			navEl.removeAttribute('class');
 
-		mxEl.style.display = 'none';
+			nav2El.addEventListener('click', toggleHeight, false);
+
+			mxEl.style.display = 'none';
+		}
 	}
 
 	window.initTOCMenu = initTOCMenu;
