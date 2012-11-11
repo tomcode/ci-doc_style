@@ -93,7 +93,7 @@ tomcode added : have spacing for mixed span wrapped inline entries
 }
 #nav.loaded {
 	height: auto;
-	max-height: 1000px;
+	max-height: 1500px;
 }
 #nav.collapsed {
 	height: auto;
