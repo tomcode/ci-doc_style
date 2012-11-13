@@ -209,16 +209,16 @@ padding: 0 0 6px 0;
  text-align: center;
 }
 
-#content {
+.content {
  margin: 1.4em 40px 0 40px;
  padding: 0;
 }
 
-#content p {
+.content p {
  margin: 12px 20px 12px 0;
 }
 
-#content h1 {
+.content h1 {
 color: #e13300;
 border-bottom: 1px solid #666;
 background-color: transparent;
@@ -228,7 +228,7 @@ margin: 0 0 20px 0;
 padding: 3px 0 7px 3px;
 }
 
-#content h2 {
+.content h2 {
  background-color: transparent;
  border-bottom: 1px solid #999;
  color: #000;
@@ -238,7 +238,7 @@ padding: 3px 0 7px 3px;
  padding: 5px 0 6px 0;
 }
 
-#content h3 {
+.content h3 {
  background-color: transparent;
  color: #333;
  font-size: 16px;
@@ -247,7 +247,7 @@ padding: 3px 0 7px 3px;
  padding: 0 0 0 0;
 }
 
-#content h4 {
+.content h4 {
  background-color: transparent;
  color: #444;
  font-size: 14px;
@@ -256,12 +256,12 @@ padding: 3px 0 7px 3px;
  padding: 0 0 0 0;
 }
 
-#content img {
+.content img {
  margin: auto;
  padding: 0;
 }
 
-#content code {
+.content code {
  font-family: Monaco, Verdana, Sans-serif;
  font-size: 12px;
  background-color: #f9f9f9;
@@ -272,7 +272,7 @@ padding: 3px 0 7px 3px;
  padding: 12px 10px 12px 10px;
 }
 
-#content pre {
+.content pre {
  font-family: Monaco, Verdana, Sans-serif;
  font-size: 12px;
  background-color: #f9f9f9;
@@ -283,7 +283,7 @@ padding: 3px 0 7px 3px;
  padding: 12px 10px 12px 10px;
 }
 
-#content .path {
+.content .path {
  background-color: #EBF3EC;
  border: 1px solid #99BC99;
  color: #005702;
@@ -292,59 +292,59 @@ padding: 3px 0 7px 3px;
  padding: 5px 10px 5px 8px;
 }
 
-#content dfn {
+.content dfn {
  font-family: "Lucida Grande", Verdana, Geneva, Sans-serif;
  color: #00620C;
  font-weight: bold;
  font-style: normal;
 }
-#content var {
+.content var {
  font-family: "Lucida Grande", Verdana, Geneva, Sans-serif;
  color: #8F5B00;
  font-weight: bold;
  font-style: normal;
 }
-#content samp {
+.content samp {
  font-family: "Lucida Grande", Verdana, Geneva, Sans-serif;
  color: #480091;
  font-weight: bold;
  font-style: normal;
 }
-#content kbd {
+.content kbd {
  font-family: "Lucida Grande", Verdana, Geneva, Sans-serif;
  color: #A70000;
  font-weight: bold;
  font-style: normal;
 }
 
-#content ul {
+.content ul {
  list-style-image: url('arrow.gif');
  margin: 10px 0 12px 0;
 }
 
-#content li {
+.content li {
  margin-bottom: 9px;
 }
 
-#content li p {
+.content li p {
  margin-left: 0;
  margin-right: 0;
 }
 
-#content .tableborder {
+.content .tableborder {
  border: 1px solid #999;
 }
-#content th, #content caption {
+.content th, .content caption {
  font-weight: bold;
  text-align: left;
  padding: 4px;
 }
-#content th {
+.content th {
  background-color: #666;
  color: #fff;
  font-size: 12px;
 }
-#content caption {	
+.content caption {	
  font-size: 16px;
 /* background-color: #EEEEEE;*/
 /* border-top: 1px solid black;*/
@@ -352,7 +352,7 @@ padding: 3px 0 7px 3px;
 /* border-right: 1px solid black;*/
 }
 
-#content .td {
+.content .td {
  font-weight: normal;
  font-size: 12px;
  padding: 6px;
@@ -368,7 +368,7 @@ tomcode added : use same view file for menu and toc page
 em {
 	color: #E13300;
 }
-#content #TOCTable {
+.content #TOCTable {
  margin: 30px 4px !important;
 	width: 98%;
 	border: 0;
@@ -377,65 +377,65 @@ em {
 #TOCTable .td_sep {
 	vertical-align: top;
 }
-#content table.unit_test {
+.content table.unit_test {
 	width: 100%;
 	vertical-align: top;
 	font-size:small;
 	margin:10px 0;
 	border:1px solid #CCC;
 }
-#content table.unit_test th {
+.content table.unit_test th {
 	width: 12em;
 	text-align: left;
 	border-bottom: 1px solid #EEE;
 }
-#content table.unit_test td {
+.content table.unit_test td {
 	border-bottom:1px solid #CCC;
 }
-#content table.unit_test table  {
+.content table.unit_test table  {
 	width: 100%;
 	margin: 0 !important;
 }
-#content table.unit_test table td {
+.content table.unit_test table td {
 	border-top: 1px solid #DDD;
 	border-bottom: none;
 }
-#content table.unit_test table td:first-child {
+.content table.unit_test table td:first-child {
 	width: 10%;
 }
-#content td.result_value {
+.content td.result_value {
 	white-space: pre;
 }
-#content th, #content caption {
+.content th, .content caption {
  font-weight: bold;
  text-align: left;
  padding: 4px;
 }
-#content th {
+.content th {
 /* background-color: #C5C7D2;*/
 /* color: #666;*/
  font-size: 12px;
 }
-#content .ut_passed_0 {
+.content .ut_passed_0 {
 	color: red;
 }
-#content .ut_passed_1 {
+.content .ut_passed_1 {
 	color: green;
 }
 /*
 tomcode added : use same view file for menu and toc page
 */
-#content #TOCTable .td {
+.content #TOCTable .td {
  background-color: #FFFFFF;
  font-size : 14px;
 }
 
-#content .tdpackage {
+.content .tdpackage {
  font-weight: normal;
  font-size: 12px;
 }
 
-#content .important {
+.content .important {
  background: #FBE6F2;
  border: 1px solid #D893A1;
  color: #333;
@@ -443,17 +443,17 @@ tomcode added : use same view file for menu and toc page
  padding: 10px;
 }
 
-#content .important p {
+.content .important p {
  margin: 6px 0 8px 0;
  padding: 0;
 }
 
-#content .important .leftpad {
+.content .important .leftpad {
  margin: 6px 0 8px 0;
  padding-left: 20px;
 }
 
-#content .critical {
+.content .critical {
  background: #FBE6F2;
  border: 1px solid #E68F8F;
  color: #333;
@@ -461,7 +461,7 @@ tomcode added : use same view file for menu and toc page
  padding: 10px;
 }
 
-#content .critical p {
+.content .critical p {
  margin: 5px 0 6px 0;
  padding: 0;
 }
@@ -568,43 +568,43 @@ fieldset {
 	background: #F5F5F5;
 	margin: 5px 0;
 }
-#content.AC_listsDemo label {
+.content.AC_listsDemo label {
 	display: inline-block;
 	width: 130px;
 }
 
-#content.invoicesOverview td:nth-child(4){
+.content.invoicesOverview td:nth-child(4){
 	text-align: right;
 }
 	
-#content.plansPlan td:nth-child(2) {
+.content.plansPlan td:nth-child(2) {
 	text-align: right;
 }
-#content.plansPlan input[name=payment] {
+.content.plansPlan input[name=payment] {
 	width: 3em;
 }
-#content.plansPlan input[name=amount] {
+.content.plansPlan input[name=amount] {
 	width: 7em;
 	text-align: right;
 }
-#content dt {
+.content dt {
 	padding: 0;
 	display: inline-block;
 	width: 200px;
 	margin: 4px 2px;
 }
-#content dd {
+.content dd {
 	padding: 0;
 	display: inline-block;
 	width: 300px;
 	margin: 4px 2px;
 }
-#content dl {
+.content dl {
 	width: 520px;
 	border: 1px solid #999;
 	background: #DDD;
 }
-#content.clientsAccount table {
+.content.clientsAccount table {
 	vertical-align: top;
 	display: inline-block;
 	margin: 5px 15px;
@@ -612,38 +612,38 @@ fieldset {
 .floatBox {
 	clear: both;
 }
-#content.paymentsOverview td:nth-child(4), 
-#content.paymentsTrimestre td:nth-child(4),
-#content.clientsOverview td:nth-child(3),
-#content.clientsAccount td:nth-child(3),
-#content.clientsAccount td:nth-child(4)
+.content.paymentsOverview td:nth-child(4), 
+.content.paymentsTrimestre td:nth-child(4),
+.content.clientsOverview td:nth-child(3),
+.content.clientsAccount td:nth-child(3),
+.content.clientsAccount td:nth-child(4)
 {
 	text-align: right;
 }
-#content.paymentsOverview td:nth-child(5), #content.paymentsTrimestre td:nth-child(5) {
+.content.paymentsOverview td:nth-child(5), .content.paymentsTrimestre td:nth-child(5) {
 	color: #999999;
 }
-#content.plansOverview input[type=text] {
+.content.plansOverview input[type=text] {
 	width: 5em;
 }
-#content.plansOverview input[name=description] {
+.content.plansOverview input[name=description] {
 	width: 25em;
 }
-#content.plansOverview input[name=start] {
+.content.plansOverview input[name=start] {
 	width: 8em;
 }
-#content.plansOverview input[name=amount] {
+.content.plansOverview input[name=amount] {
 	text-align: right;
 }
-#content.plansOverview input[name=months], #content.plansOverview input[name=duration] {
+.content.plansOverview input[name=months], .content.plansOverview input[name=duration] {
 	width: 3em;
 }
-#content.plansOverview td:nth-child(6), 
-#content.plansOverview th:nth-child(6), 
-#content.plansOverview td:nth-child(7), 
-#content.plansOverview th:nth-child(7),
-#content.plansOverview td:nth-child(8), 
-#content.plansOverview th:nth-child(8) {
+.content.plansOverview td:nth-child(6), 
+.content.plansOverview th:nth-child(6), 
+.content.plansOverview td:nth-child(7), 
+.content.plansOverview th:nth-child(7),
+.content.plansOverview td:nth-child(8), 
+.content.plansOverview th:nth-child(8) {
 	text-align: right;
 }
 @media print {
@@ -652,7 +652,7 @@ fieldset {
 	#footer,
 	#mastheadSubHead { display: none; }
 	.paymentsTrimestre table { margin: auto; }
-	#content th , #content.paymentsTrimestre td:nth-child(5) {
+	.content th , .content.paymentsTrimestre td:nth-child(5) {
 		color: #CCCCCC;
 		background-color: transparent;
 	}
